@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,11 +8,12 @@
   <title>ICoN10</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+
+<body class="page-home">
   <header class="site-header">
     <div class="container header-inner">
       <a class="site-logo" href="index.html" aria-label="Conference home">
-        <span class="logo-mark">CN</span>
+        <span class="logo-mark">ICoN</span>
         <span class="logo-text">ICoN10</span>
       </a>
 
@@ -27,24 +29,25 @@
         <a href="abstract.html">Abstract Submission</a>
         <a href="venue.html">Venue</a>
         <a href="organization.html">Organization</a>
-        <a href="contact.html">Contact</a>
+        <a href="code-of-conduct.html">Code of Conduct</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main class="page-main">
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
           <p class="eyebrow">International Conference</p>
           <h1>ICoN10</h1>
           <p class="hero-subtitle">
-            A focused meeting on environmental microbiology, microbial ecology, and emerging sequencing technologies.
+            The Tenth International Conference on Nitrification and Related Processes,<br>
+            Hosted by The Department of Civil and Environmental Engineering, KAIST
           </p>
           <div class="hero-meta">
             <div>
               <strong>Date</strong>
-              <span>July 15–17, 2027</span>
+              <span>June 6–10, 2027</span>
             </div>
             <div>
               <strong>Venue</strong>
@@ -52,8 +55,8 @@
             </div>
           </div>
           <div class="button-group">
-            <a class="button primary" href="registration.html">Register Now</a>
-            <a class="button secondary" href="abstract.html">Submit Abstract</a>
+            <a class="button primary" href="abstract.html">Submit Abstract</a>
+            <a class="button secondary" href="registration.html">Register Now</a>
           </div>
         </div>
 
@@ -61,10 +64,10 @@
           <h2>Important Dates</h2>
           <ul class="date-list">
             <li><span>Abstract submission opens</span><strong>Jan 15, 2027</strong></li>
-            <li><span>Abstract submission deadline</span><strong>Mar 31, 2027</strong></li>
-            <li><span>Acceptance notification</span><strong>Apr 30, 2027</strong></li>
-            <li><span>Early registration deadline</span><strong>May 15, 2027</strong></li>
-            <li><span>Conference dates</span><strong>Jul 15–17, 2027</strong></li>
+            <li><span>Abstract submission deadline</span><strong>Feb 28, 2027</strong></li>
+            <li><span>Early registration deadline</span><strong>April 2, 2027</strong></li>
+            <li><span>Acceptance notification</span><strong>May 6, 2027</strong></li>
+            <li><span>Conference dates</span><strong>June 6–10, 2027</strong></li>
           </ul>
         </div>
       </div>
@@ -75,14 +78,28 @@
         <div>
           <p class="section-label">About</p>
           <h2>About the Conference</h2>
+          <figure class="about-conference-image">
+            <img src="images/about-conference.jpg" alt="ICoN conference" loading="lazy">
+          </figure>
         </div>
         <div>
-          <p>
-            ICoN10 will bring together researchers, students, and professionals to discuss recent advances in microbial ecology, environmental biotechnology, and sequencing-based approaches for understanding complex microbial systems.
-          </p>
-          <p>
-            The meeting will include invited lectures, contributed oral presentations, poster sessions, networking events, and opportunities for early-career researchers to present their work.
-          </p>
+          <p>The ICoN meetings are the premier opportunity to showcase research on nitrification and related processes
+            in the nitrogen cycle. ICoN conferences bring together academic, government, and private sector researchers
+            to share scientific discoveries, innovations, and critical societal impacts of the global biogeochemical
+            nitrogen cycle. The conference is held every two years and rotates location between North America, Europe
+            and Asia.</p>
+          <p>ICoN10 will ~~~</p>
+
+          <p><br><br><strong>ICoN9 예시:</strong></p>
+          <p>ICoN 9 will continue the tradition of bringing together investigators and students at all levels.
+            Presentations, posters and workshops will encompass topics including oceanic and terrestrial
+            biogeochemistry, microbial physiology, biochemistry and structural biology, wastewater treatment and climate
+            change as well as new methodologies.</p>
+
+          <p><strong>ICoN8 예시:</strong></p>
+          <p>ICoN8 will be held from 30 July to 3 August 2023 in Princeton, New Jersey, USA. An Early Career session
+            will be held on Sunday, 30 July. The opening reception and keynote presentation will be held Sunday evening
+            to introduce the full meeting.</p>
         </div>
       </div>
     </section>
@@ -93,6 +110,7 @@
           <p class="section-label">Overview</p>
           <h2>Conference Information</h2>
         </div>
+
         <div class="card-grid three">
           <article class="info-card">
             <h3>Program</h3>
@@ -113,33 +131,74 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section invited-speakers-section">
       <div class="container">
         <div class="section-heading">
-          <p class="section-label">Speakers</p>
-          <h2>Invited Speakers</h2>
-          <p>Speaker details will be updated as they are confirmed.</p>
+          <p class="section-label">Invited Lectures</p>
+          <h2>Speakers</h2>
         </div>
-        <div class="card-grid three">
-          <article class="speaker-card">
-            <div class="speaker-photo placeholder">Photo</div>
-            <h3>Speaker Name</h3>
-            <p>Institution Name</p>
-          </article>
-          <article class="speaker-card">
-            <div class="speaker-photo placeholder">Photo</div>
-            <h3>Speaker Name</h3>
-            <p>Institution Name</p>
-          </article>
-          <article class="speaker-card">
-            <div class="speaker-photo placeholder">Photo</div>
-            <h3>Speaker Name</h3>
-            <p>Institution Name</p>
-          </article>
+
+        <div class="speaker-slider">
+          <button class="speaker-slider-button speaker-slider-prev" type="button" aria-label="Show previous speaker"
+            aria-controls="speaker-slider-track">
+            ‹
+          </button>
+
+          <div class="speaker-slider-track" id="speaker-slider-track" aria-label="Invited speakers">
+            <a class="speaker-slide" href="https://cee.kaist.ac.kr/boards/view/people_en/58/sc_category/1" target="_blank" rel="noopener noreferrer">
+              <img src="images/speakers/speaker-1.jpg" alt="Speaker-1" loading="lazy" draggable="false">
+              <div class="speaker-slide-info">
+                <h3>Sukhwan Yoon</h3>
+                <p>KAIST, Daejeon, Republic of Korea</p>
+              </div>
+            </a>
+
+            <a class="speaker-slide" href="speaker-2" target="_blank" rel="noopener noreferrer">
+              <img src="images/speakers/speaker-2.jpg" alt="Speaker-2" loading="lazy" draggable="false">
+              <div class="speaker-slide-info">
+                <h3>Speaker</h3>
+                <p>Institution</p>
+              </div>
+            </a>
+
+            <a class="speaker-slide" href="speaker-3" target="_blank" rel="noopener noreferrer">
+              <img src="images/speakers/speaker-3.jpg" alt="Speaker-3" loading="lazy" draggable="false">
+              <div class="speaker-slide-info">
+                <h3>Speaker</h3>
+                <p>Institution</p>
+              </div>
+            </a>
+
+            <a class="speaker-slide" href="speaker-4" target="_blank" rel="noopener noreferrer">
+              <img src="images/speakers/speaker-4.jpg" alt="Speaker-4" loading="lazy" draggable="false">
+              <div class="speaker-slide-info">
+                <h3>Speaker</h3>
+                <p>Institution</p>
+              </div>
+            </a>
+
+            <a class="speaker-slide" href="speaker-5" target="_blank" rel="noopener noreferrer">
+              <img src="images/speakers/speaker-5.jpg" alt="Speaker-5" loading="lazy" draggable="false">
+              <div class="speaker-slide-info">
+                <h3>Speaker</h3>
+                <p>Institution</p>
+              </div>
+            </a>
+          </div>
+
+          <button class="speaker-slider-button speaker-slider-next" type="button" aria-label="Show next speaker"
+            aria-controls="speaker-slider-track">
+            ›
+          </button>
+
         </div>
-        <div class="centered-link">
-          <a class="button secondary" href="speakers.html">See all speakers</a>
+
+        <div class="speaker-slider-actions">
+          <a class="button secondary" href="speakers.html">
+            View All Speakers
+          </a>
         </div>
+
       </div>
     </section>
   </main>
@@ -152,19 +211,26 @@
       </div>
       <div>
         <h3>Contact</h3>
-        <p><a href="mailto:conference@example.com">conference@example.com</a></p>
+        <p><a href="mailto:icon10support@kaist.ac.kr">icon10support@kaist.ac.kr</a></p>
       </div>
-      <div>
+      <div class="footer-links">
         <h3>Links</h3>
         <p><a href="registration.html">Registration</a></p>
         <p><a href="abstract.html">Abstract Submission</a></p>
+        <p><a href="code-of-conduct.html">Code of Conduct</a></p>
       </div>
     </div>
+
     <div class="container footer-bottom">
       <p>© <span id="year"></span> Conference Organizing Committee. All rights reserved.</p>
+      <a class="footer-kaist-link" href="https://www.kaist.ac.kr/en" target="_blank" rel="noopener noreferrer"
+        aria-label="Visit the KAIST website">
+        <img class="footer-kaist-logo" src="images/kaist_logo.png" alt="KAIST" />
+      </a>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

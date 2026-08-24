@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,43 +8,187 @@
   <title>Abstract Submission | ICoN10</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-  <header class="site-header"><div class="container header-inner"><a class="site-logo" href="index.html"><span class="logo-mark">CN</span><span class="logo-text">ICoN10</span></a><button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button><nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="program.html">Program</a><a href="speakers.html">Speakers</a><a href="registration.html">Registration</a><a href="abstract.html">Abstract Submission</a><a href="venue.html">Venue</a><a href="organization.html">Organization</a><a href="contact.html">Contact</a></nav></div></header>
+
+<body class="page-abstract">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-logo" href="index.html" aria-label="Conference home">
+        <span class="logo-mark">ICoN</span>
+        <span class="logo-text">ICoN10</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="program.html">Program</a>
+        <a href="speakers.html">Speakers</a>
+        <a href="registration.html">Registration</a>
+        <a href="abstract.html">Abstract Submission</a>
+        <a href="venue.html">Venue</a>
+        <a href="organization.html">Organization</a>
+        <a href="code-of-conduct.html">Code of Conduct</a>
+      </nav>
+    </div>
+  </header>
 
   <main class="page-main">
-    <section class="page-title"><div class="container"><p class="eyebrow">Call for Abstracts</p><h1>Abstract Submission</h1><p>Participants who wish to present an oral or poster presentation should submit an abstract by the deadline.</p></div></section>
-
-    <section class="section"><div class="container content-narrow">
-      <h2>Submission Guidelines</h2>
-      <ul class="check-list">
-        <li>Presentation types: Oral presentation or poster presentation</li>
-        <li>Abstract length: maximum 300 words</li>
-        <li>Keywords: 3–5 keywords</li>
-        <li>Language: English</li>
-        <li>Submission deadline: March 31, 2027</li>
-      </ul>
-
-      <h2>Required Information</h2>
-      <ol class="number-list">
-        <li>Presentation title</li>
-        <li>Author names and affiliations</li>
-        <li>Presenting author contact information</li>
-        <li>Preferred presentation type</li>
-        <li>Abstract text</li>
-      </ol>
-
-      <div class="notice-box">
-        Replace the button below with your Google Forms abstract submission URL. If you need file uploads, note that Google Forms file upload may require submitters to sign in with Google.
+    <section class="page-title">
+      <div class="container">
+        <p class="eyebrow">Call for Abstracts</p>
+        <h1>Abstract Submission</h1>
+        <p>Participants who wish to present an oral or poster presentation should submit an abstract by the deadline.
+        </p>
       </div>
+    </section>
 
-      <div class="button-group">
-        <a class="button primary" href="https://forms.gle/REPLACE_WITH_YOUR_ABSTRACT_FORM" target="_blank" rel="noopener">Submit Abstract</a>
-        <a class="button secondary" href="files/abstract-template.txt">Download Template</a>
+    <section class="section">
+      <div class="container content-narrow">
+        <h2>Submission Guidelines</h2>
+        <ul class="check-list">
+          <li>Presentation types: Oral presentation or poster presentation</li>
+          <li>Abstract length: maximum 300 words</li>
+          <li>Keywords: 3–5 keywords</li>
+          <li>Language: English</li>
+          <li>Submission deadline: March 31, 2027</li>
+        </ul>
+
+        <h2>Required Information</h2>
+        <ol class="number-list">
+          <li>Presentation title</li>
+          <li>Author names and affiliations</li>
+          <li>Presenting author contact information</li>
+          <li>Preferred presentation type</li>
+          <li>Abstract text</li>
+          <li>Keywords</li>
+        </ol>
+
+        <div class="info-box info-box--note">
+          Please submit your abstract using the <strong>Submit Abstract</strong> button below.
+          A Google account may be required for submission.
+          For guidelines on oral and poster presentations, select <strong>Information for Presenters</strong>.
+        </div>
+
+        <div class="button-group">
+          <a class="button primary" href="abstrat-link" target="_blank"
+            rel="noopener">
+            Submit Abstract
+          </a>
+          <button class="button secondary presenter-info-button" id="presenter-info-open" type="button">
+            Information for Presenters
+          </button>
+        </div>
       </div>
-    </div></section>
+    </section>
+
+    <dialog class="presenter-modal" id="presenter-modal" aria-labelledby="presenter-modal-title">
+      <div class="presenter-modal-content">
+        <button class="presenter-modal-close" id="presenter-modal-close" type="button"
+          aria-label="Close presenter information">
+          ×
+        </button>
+
+        <p class="section-label">Presentation Guidelines</p>
+
+        <h2 id="presenter-modal-title">
+          Information for Presenters
+        </h2>
+
+        <h3>Oral Presentations</h3>
+        <ul class="presenter-guideline-list">
+          <li><strong>Time:</strong>
+            20 minutes total — 15 minutes for the presentation and 5 minutes for Q&amp;A and transition.
+          </li>
+
+          <li><strong>Computer:</strong>
+            A Windows desktop will be provided. You may also connect your own laptop via HDMI.
+          </li>
+
+          <li><strong>File Format:</strong>
+            PowerPoint is strongly recommended for compatibility.
+          </li>
+
+          <li><strong>Upload:</strong>
+            Please upload your presentation to the provided computer by the afternoon before your session.
+          </li>
+
+          <li><strong>Support:</strong>
+            Session convenors will assist with uploading your presentation.
+          </li>
+
+          <li><strong>Backup:</strong>
+            Please bring a backup copy of your presentation on a USB memory stick.
+          </li>
+        </ul>
+
+        <h3>Poster Presentations</h3>
+        <ul class="presenter-guideline-list">
+          <li>
+            <strong>Poster Size:</strong>
+            A0 (841 × 1189 mm / 33.1 × 46.8 in), portrait orientation.
+          </li>
+
+          <li>
+            <strong>Poster Number:</strong>
+            Please check your poster number and place your poster on the corresponding poster board before your
+            presentation day.
+          </li>
+
+          <li>
+            <strong>Display Schedule:</strong>
+            <ul>
+              <li>Odd-numbered posters: Monday–Tuesday</li>
+              <li>Even-numbered posters: Wednesday–Thursday</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Poster Presentation:</strong>
+            <ul>
+              <li>Odd-numbered posters: Monday, 17:30–20:00</li>
+              <li>Even-numbered posters: Wednesday, 14:30–17:00</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Presentation Day:</strong>
+            Each poster will be presented on one designated day only.
+          </li>
+        </ul>
+      </div>
+    </dialog>
   </main>
 
-  <footer class="site-footer"><div class="container footer-bottom"><p>© <span id="year"></span> Conference Organizing Committee.</p></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>ICoN10</h2>
+        <p>KAIST, Daejeon, Republic of Korea</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="mailto:icon10support@kaist.ac.kr">icon10support@kaist.ac.kr</a></p>
+      </div>
+      <div class="footer-links">
+        <h3>Links</h3>
+        <p><a href="registration.html">Registration</a></p>
+        <p><a href="abstract.html">Abstract Submission</a></p>
+        <p><a href="code-of-conduct.html">Code of Conduct</a></p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Conference Organizing Committee. All rights reserved.</p>
+      <a class="footer-kaist-link" href="https://www.kaist.ac.kr/en" target="_blank" rel="noopener noreferrer"
+        aria-label="Visit the KAIST website">
+        <img class="footer-kaist-logo" src="images/kaist_logo.png" alt="KAIST" />
+      </a>
+    </div>
+  </footer>
+
   <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,13 +8,28 @@
   <title>Program | ICoN10</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+
+<body class="page-program">
   <header class="site-header">
     <div class="container header-inner">
-      <a class="site-logo" href="index.html"><span class="logo-mark">CN</span><span class="logo-text">ICoN10</span></a>
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a class="site-logo" href="index.html" aria-label="Conference home">
+        <span class="logo-mark">ICoN</span>
+        <span class="logo-text">ICoN10</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a><a href="program.html">Program</a><a href="speakers.html">Speakers</a><a href="registration.html">Registration</a><a href="abstract.html">Abstract Submission</a><a href="venue.html">Venue</a><a href="organization.html">Organization</a><a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="program.html">Program</a>
+        <a href="speakers.html">Speakers</a>
+        <a href="registration.html">Registration</a>
+        <a href="abstract.html">Abstract Submission</a>
+        <a href="venue.html">Venue</a>
+        <a href="organization.html">Organization</a>
+        <a href="code-of-conduct.html">Code of Conduct</a>
       </nav>
     </div>
   </header>
@@ -24,31 +40,261 @@
         <p class="eyebrow">Schedule</p>
         <h1>Program</h1>
         <p>The detailed program will be updated after abstract review and speaker confirmation.</p>
+
+        <div class="program-downloads" aria-label="Program documents">
+          <a class="program-download-button" href="files/full-program.pdf" target="_blank" rel="noopener noreferrer">
+            Full Program
+          </a>
+
+          <!-- <a class="program-download-button" href="files/speaker-schedule.pdf" target="_blank" rel="noopener noreferrer"> -->
+          <a class="program-download-button is-preparing" href="#" aria-disabled="true">
+            Speaker Schedule
+          </a>
+
+          <!-- <a class="program-download-button" href="files/abstract-booklet.pdf" target="_blank" rel="noopener noreferrer"> -->
+          <a class="program-download-button is-preparing" href="#" aria-disabled="true">
+            Abstract Booklet
+          </a>
+
+          <!-- <a class="program-download-button" href="files/poster-numbers.pdf" target="_blank" rel="noopener noreferrer"> -->
+          <a class="program-download-button is-preparing" href="#" aria-disabled="true">
+            Poster Numbers
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section program-section">
       <div class="container">
-        <h2>Preliminary Schedule</h2>
-        <div class="table-wrapper">
-          <table class="program-table">
-            <thead><tr><th>Time</th><th>Day 1</th><th>Day 2</th><th>Day 3</th></tr></thead>
-            <tbody>
-              <tr><td>09:00–10:00</td><td>Registration</td><td>Session 3</td><td>Session 6</td></tr>
-              <tr><td>10:00–10:30</td><td>Opening remarks</td><td>Coffee break</td><td>Coffee break</td></tr>
-              <tr><td>10:30–12:00</td><td>Keynote lecture</td><td>Session 4</td><td>Session 7</td></tr>
-              <tr><td>12:00–13:30</td><td>Lunch</td><td>Lunch</td><td>Lunch</td></tr>
-              <tr><td>13:30–15:00</td><td>Session 1</td><td>Poster session</td><td>Closing session</td></tr>
-              <tr><td>15:30–17:00</td><td>Session 2</td><td>Session 5</td><td>Departure</td></tr>
-              <tr><td>18:00–20:00</td><td>Welcome reception</td><td>Conference dinner</td><td></td></tr>
-            </tbody>
-          </table>
+        <div class="program-days">
+          <!-- June 6 -->
+          <section class="program-day" id="june-6">
+            <div class="program-day-heading">
+              <p class="section-label">Day 1 (SUN.)</p>
+              <h2>June 6</h2>
+            </div>
+
+            <div class="schedule-list">
+              <article class="schedule-item">
+                <time>09:00–10:00</time>
+                <div class="schedule-content">
+                  <h3>Welcome Remarks</h3>
+                  <p class="schedule-meta">Chair: Sukhwan Yoon</p>
+                </div>
+              </article>
+
+              <article class="schedule-item">
+                <time>10:00–12:30</time>
+                <div class="schedule-content">
+                  <h3>Early Career Researcher Workshop</h3>
+                  <p class="schedule-meta">Chair: [Name]</p>
+                  <p>[Speaker] — [Title]</p>
+                </div>
+              </article>
+
+              <article class="schedule-item schedule-break">
+                <time>12:30–14:00</time>
+                <div class="schedule-content">
+                  <h3>Lunch</h3>
+                </div>
+              </article>
+
+              <article class="schedule-item">
+                <time>14:00–17:30</time>
+                <div class="schedule-content">
+                  <h3>Early Career Researcher Workshop</h3>
+                  <p class="schedule-meta">Chair: [Name]</p>
+                  <p>[Speaker] — [Title]</p>
+                </div>
+              </article>
+
+
+              <article class="schedule-item">
+                <time>17:30–19:00</time>
+                <div class="schedule-content">
+                  <h3>Welcome Reception</h3>
+                  <p class="schedule-meta">Location: [Venue]</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- June 7 -->
+          <section class="program-day" id="june-7">
+            <div class="program-day-heading">
+              <p class="section-label">Day 2 (MON.)</p>
+              <h2>June 7</h2>
+            </div>
+
+            <div class="schedule-list">
+              <article class="schedule-item">
+                <time>09:30–12:30</time>
+                <div class="schedule-content">
+                  <h3>S1 — [Session title]</h3>
+                  <p class="schedule-meta">Chair: [Name] · Location: [Room]</p>
+                  <p>[Speaker] — [Title]</p>
+                  <p>[Speaker] — [Title]</p>
+                </div>
+              </article>
+
+              <article class="schedule-item schedule-break">
+                <time>12:30–14:00</time>
+                <div class="schedule-content">
+                  <h3>Lunch</h3>
+                </div>
+              </article>
+
+              <article class="schedule-item">
+                <time>14:00–17:30</time>
+                <div class="schedule-content">
+                  <h3>S2 — [Session title]</h3>
+                  <p class="schedule-meta">Chair: [Name]</p>
+                </div>
+              </article>
+
+              <article class="schedule-item">
+                <time>17:30–20:00</time>
+                <div class="schedule-content">
+                  <h3>Poster Session</h3>
+                  <p class="schedule-meta">Odd Numbers</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- June 8 -->
+          <section class="program-day" id="june-8">
+            <div class="program-day-heading">
+              <p class="section-label">Day 3 (TUE.)</p>
+              <h2>June 8</h2>
+            </div>
+
+            <div class="schedule-list">
+              <article class="schedule-item">
+                <time>09:00–12:30</time>
+                <div class="schedule-content">
+                  <h3>S3 — [Session title]</h3>
+                  <p class="schedule-meta">Chair: [Name]</p>
+                </div>
+              </article>
+
+              <article class="schedule-item schedule-break">
+                <time>12:30–</time>
+                <div class="schedule-content">
+                  <h3>Free Time</h3>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- June 9 -->
+          <section class="program-day" id="june-9">
+            <div class="program-day-heading">
+              <p class="section-label">Day 4 (WED.)</p>
+              <h2>June 9</h2>
+            </div>
+
+            <div class="schedule-list">
+              <article class="schedule-item">
+                <time>09:00–12:30</time>
+                <div class="schedule-content">
+                  <h3>S4 — [Session title]</h3>
+                  <p class="schedule-meta">Chair: [Name]</p>
+                </div>
+              </article>
+
+              <article class="schedule-item schedule-break">
+                <time>12:30–14:00</time>
+                <div class="schedule-content">
+                  <h3>Lunch</h3>
+                </div>
+              </article>
+
+              <article class="schedule-item">
+                <time>14:30–17:00</time>
+                <div class="schedule-content">
+                  <h3>Poster Session</h3>
+                  <p class="schedule-meta">Even Numbers</p>
+                </div>
+              </article>
+
+              <article class="schedule-item schedule-break">
+                <time>19:00–21:00</time>
+                <div class="schedule-content">
+                  <h3>Conference Dinner</h3>
+                  <p class="schedule-meta">Location: [Venue]</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- June 10 -->
+          <section class="program-day" id="june-10">
+            <div class="program-day-heading">
+              <p class="section-label">Day 5 (THU.)</p>
+              <h2>June 10</h2>
+            </div>
+
+            <div class="schedule-list">
+              <article class="schedule-item">
+                <time>09:00–12:30</time>
+                <div class="schedule-content">
+                  <h3>S5 — [Session title]</h3>
+                  <p class="schedule-meta">Chair: [Name]</p>
+                </div>
+              </article>
+
+              <article class="schedule-item schedule-break">
+                <time>12:30–14:00</time>
+                <div class="schedule-content">
+                  <h3>Lunch</h3>
+                </div>
+              </article>
+
+              <article class="schedule-item">
+                <time>14:00–18:00</time>
+                <div class="schedule-content">
+                  <h3>Closing Session</h3>
+                  <p class="schedule-meta">Closing remarks and ICoN11 announcement</p>
+                </div>
+              </article>
+
+
+            </div>
+          </section>
+
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-bottom"><p>© <span id="year"></span> Conference Organizing Committee.</p></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>ICoN10</h2>
+        <p>KAIST, Daejeon, Republic of Korea</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="mailto:icon10support@kaist.ac.kr">icon10support@kaist.ac.kr</a></p>
+      </div>
+      <div class="footer-links">
+        <h3>Links</h3>
+        <p><a href="registration.html">Registration</a></p>
+        <p><a href="abstract.html">Abstract Submission</a></p>
+        <p><a href="code-of-conduct.html">Code of Conduct</a></p>        
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Conference Organizing Committee. All rights reserved.</p>
+      <a class="footer-kaist-link" href="https://www.kaist.ac.kr/en" target="_blank" rel="noopener noreferrer" aria-label="Visit the KAIST website">
+        <img class="footer-kaist-logo" src="images/kaist_logo.png" alt="KAIST" />
+      </a>
+    </div>
+  </footer>
+
   <script src="js/main.js"></script>
 </body>
+
 </html>
