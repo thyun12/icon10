@@ -72,6 +72,10 @@ img {
   max-width: 100%;
 }
 
+figure {
+  margin: 0;
+}
+
 button,
 input,
 select,
@@ -91,7 +95,7 @@ textarea {
 h1,
 h2,
 h3 {
-  color: var(--color-navy);
+  color: inherit;
   line-height: 1.2;
 }
 
@@ -145,6 +149,12 @@ a:focus-visible {
   text-decoration: underline;
 }
 
+/* 이메일 링크 */
+a[href^="mailto:"],
+a[href^="mailto:"]:visited {
+  color: var(--color-blue);
+}
+
 /* ================================================================
    03. SHARED LAYOUT
 ================================================================ */
@@ -162,7 +172,7 @@ a:focus-visible {
   padding: 72px 0;
 }
 
-.page-title + .section {
+.page-title+.section {
   padding-top: 48px;
 }
 
@@ -319,36 +329,21 @@ a:focus-visible {
   z-index: 0;
   width: min(78vw, 980px);
   height: 185px;
-  background: linear-gradient(
-    90deg,
-    var(--color-motif-transparent) 3%,
-    var(--color-motif-light) 30%,
-    var(--color-motif-blue) 68%,
-    var(--color-motif-dark) 100%
-  );
+  background: linear-gradient(90deg,
+      var(--color-motif-transparent) 3%,
+      var(--color-motif-light) 30%,
+      var(--color-motif-blue) 68%,
+      var(--color-motif-dark) 100%);
   border-radius: 50%;
   transform: rotate(-2deg);
 }
 
-.page-title::after {
-  content: "";
-  position: absolute;
-  right: -12%;
-  bottom: -122px;
-  z-index: 0;
-  width: min(82vw, 1040px);
-  height: 176px;
-  background: linear-gradient(135deg, var(--color-bg-soft-blue), var(--color-bg));
-  border-radius: 50%;
-  transform: rotate(-2deg);
-}
-
-.page-title > .container {
+.page-title>.container {
   position: relative;
   z-index: 1;
 }
 
-.page-title > .container > p:last-of-type {
+.page-title>.container>p:last-of-type {
   max-width: 760px;
   margin-bottom: 0;
   color: var(--color-muted);
@@ -404,7 +399,7 @@ a:focus-visible {
 
 .button.secondary,
 .button.secondary:visited {
-  color: var(--color-navy);
+  color: var(--color-text);
   background: var(--color-bg);
   border-color: var(--color-border-strong);
 }
@@ -442,6 +437,15 @@ a:focus-visible {
 .venue-detail-link,
 .venue-card-link {
   font-weight: 750;
+}
+
+.info-card a {
+  color: var(--color-blue);
+}
+
+a.venue-card-link,
+a.venue-card-link:visited {
+  color: var(--color-blue);
 }
 
 .table-wrapper,
@@ -531,7 +535,7 @@ tr:last-child th {
   letter-spacing: -0.025em;
 }
 
-.info-box > :last-child {
+.info-box> :last-child {
   margin-bottom: 0;
 }
 
@@ -647,7 +651,7 @@ tr:last-child th {
 }
 
 .hero-meta strong {
-  color: var(--color-navy);
+  color: var(--color-text);
 }
 
 .hero-meta span,
@@ -679,7 +683,7 @@ tr:last-child th {
 }
 
 .date-list strong {
-  color: var(--color-navy);
+  color: var(--color-text);
   text-align: right;
   white-space: nowrap;
 }
@@ -859,17 +863,22 @@ tr:last-child th {
   color: var(--color-navy);
   background: var(--color-bg);
   border: 1px solid var(--color-blue);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-pill);
   font-weight: 800;
   line-height: 1.35;
   text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .program-download-button:hover,
 .program-download-button:focus-visible {
   color: var(--color-bg);
-  background: var(--color-blue);
+  background: var(--color-navy);
   text-decoration: none;
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-button);
 }
 
 .program-download-button.is-preparing {
@@ -1039,7 +1048,7 @@ tr:last-child th {
   padding-left: 1.3rem;
 }
 
-.presenter-guideline-list > li {
+.presenter-guideline-list>li {
   margin-bottom: 10px;
   line-height: 1.65;
 }
@@ -1055,7 +1064,7 @@ tr:last-child th {
 
 .presenter-guideline-list li::marker,
 .presenter-guideline-list strong {
-  color: var(--color-blue);
+  color: var(--color-navy);
 }
 
 /* ================================================================
@@ -1118,11 +1127,6 @@ tr:last-child th {
   margin-top: 0;
 }
 
-.venue-card-link::after {
-  content: " →";
-  color: var(--color-blue);
-}
-
 .venue-wifi-box {
   margin-top: 32px;
 }
@@ -1134,20 +1138,17 @@ tr:last-child th {
 /* 60-2. Transportation */
 
 .travel-content h2 {
-  margin-top: 38px;
+  margin: 0 0 14px;
+  font-size: clamp(1.25rem, 2.5vw, 1.55rem);
+  letter-spacing: -0.025em;
 }
 
-.travel-content > .info-box:first-child {
+.travel-content > h2 {
+  margin-top: 20px;
+}
+
+.travel-content>.info-box:first-child {
   margin-top: 0;
-}
-
-.official-directions-box {
-  margin-top: 18px;
-}
-
-.transportation-summary-intro {
-  margin: 0 0 34px;
-  color: var(--color-muted);
 }
 
 /* Transportation links are the only persistent-link exception. */
@@ -1171,14 +1172,45 @@ tr:last-child th {
 }
 
 .travel-steps li {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   padding-left: 4px;
   line-height: 1.75;
 }
 
 .travel-steps li::marker {
+  font-weight: 700;
+}
+
+.travel-substeps {
+  margin: 10px 0 0;
+  padding-left: 1.4rem;
+  list-style: disc;
+}
+
+.travel-substeps li {
+  margin-bottom: 10px;
+  padding-left: 4px;
+}
+
+.travel-substeps li::marker {
+  color: var(--color-navy);
+}
+
+.travel-substep-note {
+  margin: 12px 0 0;
+  color: var(--color-muted);
+}
+
+.travel-substep-note a {
   color: var(--color-blue);
-  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: var(--link-underline-thickness);
+  text-underline-offset: var(--link-underline-offset);
+}
+
+.travel-substep-note a:hover,
+.travel-substep-note a:focus-visible {
+  color: var(--color-blue-dark);
 }
 
 .destination-box {
@@ -1191,6 +1223,7 @@ tr:last-child th {
 
 .destination-box > strong {
   color: var(--color-navy);
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
 }
 
 .destination-box > p:last-child {
@@ -1202,10 +1235,10 @@ tr:last-child th {
   padding: 20px 18px;
   color: var(--color-navy);
   background: var(--color-bg);
-  border: 2px solid var(--color-blue);
+  border: 2px solid var(--color-navy);
   border-radius: var(--radius-sm);
   font-size: clamp(1.4rem, 3vw, 2rem);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.4;
   text-align: center;
 }
@@ -1287,7 +1320,7 @@ tr:last-child th {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 24px;
+  margin-top: 10px;
 }
 
 .map-information-box {
@@ -1296,6 +1329,10 @@ tr:last-child th {
 
 .useful-contacts-box {
   margin-top: 28px;
+}
+
+.useful-contacts-box .info-box__title {
+  color: var(--color-note-text);
 }
 
 .useful-contacts-grid {
@@ -1307,6 +1344,11 @@ tr:last-child th {
 .useful-contact-item h3 {
   margin: 0 0 10px;
   font-size: 1.05rem;
+  color: var(--color-note-text);
+}
+
+.useful-contact-item strong {
+  color: var(--color-text);
 }
 
 .useful-contact-item p,
@@ -1447,6 +1489,19 @@ tr:last-child th {
   display: flex;
   margin-top: 30px;
 }
+
+
+
+
+
+.dev-note {
+  padding: 12px 14px;
+  color: #1f0f7e;
+  background: #c3daf7;
+  border: 1px dashed #177099;
+}
+
+
 
 /* ================================================================
    90. RESPONSIVE RULES
@@ -1629,7 +1684,7 @@ tr:last-child th {
     padding: 52px 0;
   }
 
-  .page-title + .section {
+  .page-title+.section {
     padding-top: 36px;
   }
 
@@ -1638,13 +1693,6 @@ tr:last-child th {
     bottom: -74px;
     width: 720px;
     height: 150px;
-  }
-
-  .page-title::after {
-    right: -382px;
-    bottom: -104px;
-    width: 760px;
-    height: 144px;
   }
 
   .date-list li {
