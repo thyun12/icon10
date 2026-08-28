@@ -26,8 +26,8 @@
         <a href="program.html">Program</a>
         <a href="speakers.html">Speakers</a>
         <a href="registration.html">Registration</a>
-        <a href="abstract.html">Abstract Submission</a>
-        <a href="venue.html">Venue</a>
+        <a href="abstract.html">Abstract</a>
+        <a href="venue.html">Visit</a>
         <a href="organization.html">Organization</a>
         <a href="code-of-conduct.html">Code of Conduct</a>
       </nav>
@@ -46,11 +46,6 @@
             Full Program
           </a>
 
-          <!-- <a class="program-download-button" href="files/speaker-schedule.pdf" target="_blank" rel="noopener noreferrer"> -->
-          <a class="program-download-button is-preparing" href="#" aria-disabled="true">
-            Speaker Schedule
-          </a>
-
           <!-- <a class="program-download-button" href="files/abstract-booklet.pdf" target="_blank" rel="noopener noreferrer"> -->
           <a class="program-download-button is-preparing" href="#" aria-disabled="true">
             Abstract Booklet
@@ -60,9 +55,90 @@
           <a class="program-download-button is-preparing" href="#" aria-disabled="true">
             Poster Numbers
           </a>
+
+          <button class="program-download-button" id="presenter-info-open" type="button">
+            Presentation Guidelines
+          </button>
         </div>
       </div>
     </section>
+
+    <dialog class="presenter-modal" id="presenter-modal" aria-labelledby="presenter-modal-title">
+      <div class="presenter-modal-content">
+        <button class="presenter-modal-close" id="presenter-modal-close" type="button"
+          aria-label="Close presenter information">
+          ×
+        </button>
+
+        <p class="section-label">Presentation Guidelines</p>
+
+        <h2 id="presenter-modal-title">
+          Information for Presenters
+        </h2>
+
+        <h3>Oral Presentations</h3>
+        <ul class="presenter-guideline-list">
+          <li><strong>Time:</strong>
+            20 minutes total — 15 minutes for the presentation and 5 minutes for Q&amp;A and transition.
+          </li>
+
+          <li><strong>Computer:</strong>
+            Presentations must be delivered using the provided Windows desktop.
+          </li>
+
+          <li><strong>File Format:</strong>
+            PowerPoint is strongly recommended for compatibility.
+          </li>
+
+          <li><strong>Upload:</strong>
+            Please upload your presentation to the provided computer by the afternoon before your session.
+          </li>
+
+          <li><strong>Support:</strong>
+            Session convenors will assist with uploading your presentation.
+          </li>
+
+          <li><strong>Backup:</strong>
+            Please bring a backup copy of your presentation on a USB memory stick.
+          </li>
+        </ul>
+
+        <h3>Poster Presentations</h3>
+        <ul class="presenter-guideline-list">
+          <li>
+            <strong>Poster Size:</strong>
+            A0 (841 × 1189 mm / 33.1 × 46.8 in), portrait orientation.
+          </li>
+
+          <li>
+            <strong>Poster Number:</strong>
+            Please check your poster number and place your poster on the corresponding poster board before your
+            presentation day.
+          </li>
+
+          <li>
+            <strong>Display Schedule:</strong>
+            <ul>
+              <li>Odd-numbered posters: Monday–Tuesday</li>
+              <li>Even-numbered posters: Wednesday–Thursday</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Poster Presentation:</strong>
+            <ul>
+              <li>Odd-numbered posters: Monday, 17:30–20:00</li>
+              <li>Even-numbered posters: Wednesday, 14:30–17:00</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Presentation Day:</strong>
+            Each poster will be presented on one designated day only.
+          </li>
+        </ul>
+      </div>
+    </dialog>
 
     <section class="section program-section">
       <div class="container">
@@ -282,13 +358,14 @@
         <h3>Links</h3>
         <p><a href="registration.html">Registration</a></p>
         <p><a href="abstract.html">Abstract Submission</a></p>
-        <p><a href="code-of-conduct.html">Code of Conduct</a></p>        
+        <p><a href="code-of-conduct.html">Code of Conduct</a></p>
       </div>
     </div>
 
     <div class="container footer-bottom">
       <p>© <span id="year"></span> Conference Organizing Committee. All rights reserved.</p>
-      <a class="footer-kaist-link" href="https://www.kaist.ac.kr/en" target="_blank" rel="noopener noreferrer" aria-label="Visit the KAIST website">
+      <a class="footer-kaist-link" href="https://www.kaist.ac.kr/en" target="_blank" rel="noopener noreferrer"
+        aria-label="Visit the KAIST website">
         <img class="footer-kaist-logo" src="images/kaist_logo.png" alt="KAIST" />
       </a>
     </div>
