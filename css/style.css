@@ -980,7 +980,7 @@ tr:last-child th {
    40. REGISTRATION — registration.html
 ================================================================ */
 
-.page-registration .button.primary {
+.page-registration .button.primary .button.secondary {
   margin-top: 4px;
 }
 
