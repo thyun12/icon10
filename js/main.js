@@ -34,9 +34,9 @@ const currentPage =
   window.location.pathname.split('/').pop() || 'index.html';
 
 const parentNavigationPages = {
-  'venue-transportation.html': 'venue.html',
-  'venue-accommodation.html': 'venue.html',
-  'venue-local-information.html': 'venue.html'
+  'transportation.html': 'venue.html',
+  'accommodation.html': 'venue.html',
+  'local-information.html': 'venue.html'
 };
 
 const activeNavigationPage =
@@ -80,7 +80,7 @@ if (
   );
 
   const continuousScrollSpeed = 25;
-  const resumeDelay = 1200;
+  const resumeDelay = 200;
   const reducedMotion = window.matchMedia(
     '(prefers-reduced-motion: reduce)'
   ).matches;
