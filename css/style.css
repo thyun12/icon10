@@ -1333,6 +1333,40 @@ tr:last-child th {
 }
 
 /* ================================================================
+   SPEAKERS — Early Career Researcher Session
+================================================================ */
+
+.early-career-speakers-section {
+  background: var(--color-bg-muted);
+}
+
+.early-career-title {
+  margin: 0 0 24px;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  letter-spacing: -0.025em;
+}
+
+.secondary-speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 300px));
+  justify-content: start;
+  gap: 24px;
+}
+
+/* .secondary-speaker-card h3 {
+  margin-top: 14px;
+  margin-bottom: 5px;
+  font-size: 1.05rem;
+}
+
+.secondary-speaker-card p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  line-height: 1.45;
+} */
+
+/* ================================================================
    40. REGISTRATION — registration.html
 ================================================================ */
 
@@ -1483,7 +1517,7 @@ tr:last-child th {
   margin: 0;
 }
 
-.submission-panel .info-box p + p {
+.submission-panel .info-box p+p {
   margin-top: 10px;
 }
 
@@ -2261,6 +2295,19 @@ tr:last-child th {
 
   .speaker-slide-info p {
     font-size: 0.82rem;
+  }
+
+  .secondary-speaker-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .secondary-speaker-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .secondary-speaker-card p {
+    font-size: 0.8rem;
   }
 
   .hotel-card-grid {
